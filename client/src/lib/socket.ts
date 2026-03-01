@@ -16,6 +16,7 @@ export function getSocket(): AppSocket {
       reconnectionDelay: 1000,
       reconnectionDelayMax: 5000,
       timeout: 10000,
+      transports: ['polling', 'websocket'],
     })
   }
   return socket
